@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Select Volume</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="header">Kailash Chandra Shorthand Passages</div>
+
+<div class="grid">
+    <script>
+
+        const passageRanges = [
+            [1,22],[23,44],[45,66],[67,88],[89,110],[111,132],
+            [133,154],[155,176],[177,198],[199,220],[221,242],[243,264],
+            [265,286],[287,308],[309,330],[331,352],[353,374],[375,396],
+            [397,418],[419,440],[441,462],[463,484],[485,506],[507,528]
+        ];
+
+        for (let i = 1; i <= 24; i++) {
+            let start = passageRanges[i-1][0];
+            let end = passageRanges[i-1][1];
+
+            document.write(`
+                <a href="passages.html?volume=${i}" class="card">
+                    Volume ${i}<br>
+                    <span style='font-size:18px; font-weight:500;'>(${start} - ${end})</span>
+                </a>
+            `);
+        }
+    </script>
+</div>
+
+</body>
+</html>

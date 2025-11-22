@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Audio Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="header" id="titleHead"></div>
+
+<div class="player-wrapper">
+
+    <div class="player-section">
+
+        <h2 class="sub-head">Choose Audio Speed</h2>
+
+        <div class="btn-group">
+            <button class="btn big-btn" onclick="playAudio('80')">80 WPM</button>
+            <button class="btn big-btn" onclick="playAudio('100')">100 WPM</button>
+            <button class="btn big-btn" onclick="playAudio('120')">120 WPM</button>
+            <button class="btn pause-btn" onclick="pauseAudio()">Pause</button>
+        </div>
+
+        <audio id="audioPlayer" controls class="audio-box"></audio>
+
+    </div>
+
+    <div class="upload-section">
+        <h2 class="sub-head">Upload Your Typed Passage</h2>
+        <p class="small-note">Upload only .txt files for accurate analysis.</p>
+
+        <input type="file" id="inputFile" accept=".txt" class="file-input" onchange="analyseText()">
+
+        <div id="result" class="result-box"></div>
+    </div>
+    <div id="result" class="result-box">
+        <!-- Side-by-Side Text Comparison -->
+        <div id="compareBox" style="margin-top:25px; display:flex; gap:20px; flex-wrap:wrap;">
+    
+        <div style="flex:1; min-width:300px; background:white; padding:20px; border-radius:12px;">
+            <h3>Original Passage</h3>
+            <div id="originalText" style="font-size:18px; line-height:28px;"></div>
+        </div>
+
+        <div style="flex:1; min-width:300px; background:white; padding:20px; border-radius:12px;">
+            <h3>Your Typed Text</h3>
+        <div id="typedText" style="font-size:18px; line-height:28px;"></div>
+    </div>
+
+</div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

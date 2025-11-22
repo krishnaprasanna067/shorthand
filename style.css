@@ -1,0 +1,198 @@
+/* Global styling */
+body {
+    margin: 0;
+    padding: 0;
+    background: #699bb8;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Animated top heading */
+.header {
+    text-align: center;
+    padding: 30px 10px;
+    font-size: 38px;
+    color: #0e0f0f;
+    font-weight: 700;
+    animation: slideDown 1s ease;
+}
+
+@keyframes slideDown {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Grid layout for volumes & passages */
+.grid {
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 25px;
+}
+
+/* Boxes for Volumes & Passages */
+.card {
+    background: rgb(199, 220, 230);
+    padding: 35px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 24px;
+    color: #0b0c0c;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+    transition: 0.3s;
+    animation: fadeUp 0.6s ease;
+}
+
+.card:hover {
+    transform: scale(1.08);
+    background: #f0f8ff;
+    box-shadow: 0 10px 18px rgba(0,0,0,0.25);
+}
+
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(25px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Buttons */
+.btn {
+    background: rgb(13, 14, 15);
+    color: white;
+    padding: 14px 25px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    background: #003f8a;
+}
+
+/* Player Page Box */
+.player-box {
+    width: 85%;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    margin-top: 30px;
+    border-radius: 20px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    animation: fadeUp 0.7s ease;
+}
+
+.upload-box {
+    padding: 20px;
+    background: #f0f8ff;
+    border-radius: 15px;
+    margin-top: 25px;
+    text-align: center;
+}
+/* Player Page – Modern Layout */
+.player-wrapper {
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.player-section {
+    background: white;
+    padding: 35px;
+    border-radius: 22px;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+    animation: fadeUp 0.7s ease;
+}
+
+.upload-section {
+    background: #e8f4fc;
+    padding: 35px;
+    border-radius: 22px;
+    margin-top: 35px;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+    animation: fadeUp 0.9s ease;
+}
+
+/* Sub-headings */
+.sub-head {
+    color: #0e0f0f;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Note text */
+.small-note {
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Buttons */
+.btn-group {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.big-btn {
+    padding: 18px 35px;
+    font-size: 20px;
+    border-radius: 12px;
+    margin: 12px;
+    background: #1e2a2c;
+}
+
+.big-btn:hover {
+    background: #004080;
+}
+
+.pause-btn {
+    background: #444;
+    padding: 16px 45px;
+}
+
+.pause-btn:hover {
+    background: #000;
+}
+
+/* Audio Box */
+.audio-box {
+    width: 100%;
+    margin-top: 25px;
+    border-radius: 12px;
+    background: #d8edf8;
+    padding: 10px;
+}
+
+/* File Input */
+.file-input {
+    padding: 15px;
+    background: white;
+    border: 2px solid #cce2f5;
+    border-radius: 15px;
+    width: 100%;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* Result Box */
+.result-box {
+    margin-top: 25px;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    animation: fadeUp 1s ease;
+    font-size: 20px;
+}
