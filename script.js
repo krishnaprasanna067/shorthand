@@ -9,7 +9,7 @@ if (vol && pas) {
 
 function playAudio(speed) {
     let audio = document.getElementById("audioPlayer");
-    audio.src = `audios/volume${vol}/p${pas}_${speed}.mp3`;
+    audio.src = `p${pas}_${speed}.mp3`;
     audio.play();
 }
 
@@ -204,3 +204,4 @@ async function analyseText() {
         return (s+'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
     }
 }
+
